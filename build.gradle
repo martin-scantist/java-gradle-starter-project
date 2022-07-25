@@ -41,6 +41,12 @@ dependencies {
     runtimeOnly "org.slf4j:slf4j-nop:1.7.32"
 }
 
+sonarqube {
+    properties {
+        property 'sonar.host.url', 'http://localhost:9000'
+    }
+}
+
 javafx {
     version = "17.0.2"
     modules = [ 'javafx.controls' ]
